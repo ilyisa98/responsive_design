@@ -1,0 +1,151 @@
+/*outer container*/
+.container{
+    width: 550px;
+}
+/*social share*/
+.social_bar{
+    width: 500px;
+}
+
+.section{
+    border: 1px solid black;
+}
+
+/*declaring borders*/
+/*
+div > *{
+    border: 1px solid black;
+    padding: 1px
+}
+*/
+
+
+.sect{
+    width:99%;
+}
+
+.main_img{
+    display: inline-grid;
+}
+/*addvertisements*/
+.adds{
+    display: inline-block;
+    width: 100px;
+    height: 400px;
+}
+
+
+
+#face_head{
+    background-color: darkgrey;  
+}
+.main_para{
+    width: 400px;
+    font-size: 14px;
+}
+
+
+
+/* responsiveness*/
+/* mobile first */
+
+@media screen and (max-width: 425px)
+{
+  .container{
+      width: 425px;
+  }
+  .adds{
+      display: inline-block;
+
+      width: 100px;
+      height: 400px;
+  }
+  .main_para{
+      width: 300px;
+      font-size: 14px;
+  }
+  .social_bar{
+      width: 400px;
+  }
+  .main_img_image{
+    width:300px;
+     height:400px;
+  }
+}
+
+/* tablet*/
+@media screen and (min-width: 426px) and (max-width: 768px)
+{
+  .container{
+      width: 768px;
+  }
+  .adds{
+      display: inline-block;
+
+      width: 200px;
+      height: 550px;
+  }
+  .main_para{
+      width: 500px;
+      font-size: 14px;
+  }
+  .social_bar{
+      width: 500px;
+  }
+  .main_img_image{
+    width:500px;
+     height:550px;
+  }
+
+}
+
+/* laptop */
+@media screen and (min-width: 768px)and (max-width: 1024px)
+{
+  .container{
+      width: 1024px;
+  }
+  .adds{
+      display: inline-block;
+
+      width: 200px;
+      height: 550px;
+  }
+  .main_para{
+      width: 700px;
+      font-size: 15px;
+  }
+  .social_bar{
+      width: 700px;
+  }
+  .main_img_image{
+    width:700px;
+     height:550px;
+  }
+  }
+
+
+/* laptop */
+@media screen and (min-width: 1025px) and (max-width: 1440px)
+{
+  .container{
+      width: 1400px;
+  }
+  .adds{
+      display: inline-block;
+
+      width: 350px;
+      height: 650px;
+  }
+  .main_para{
+      width: 999px;
+      font-size: 18px;
+  }
+  .social_bar{
+      width: 999px;
+  }
+  .main_img_image{
+    width:999px;
+     height:850px;
+  }
+  }

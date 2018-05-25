@@ -1,0 +1,118 @@
+/*divs*/
+code{
+ background: #3db34a;
+ font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+ border-radius: 6px;
+ display: block;
+ color: #fff;
+ text-align: center;
+ padding: 24px 15px;
+}
+
+#head{
+    width: 99%;
+}
+
+#nav{
+    display: inline-block;
+    width: 34%;
+}
+
+#sect{
+    display: inline-block;
+    width: 64.5%;
+}
+
+#article{
+    display: inline-block;
+    width: 32.7%;
+    margin-left: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#foot{
+    width: 99%;
+}
+
+ #head, #nav, #sect, #foot{
+   margin: 2px;
+   margin-left: 3px;
+ }
+
+/*background*/
+.container{
+  background-color: #000;
+}
+
+/*responsiveness*/
+/*mobile*/
+@media screen and (max-width: 425px) {
+    code {
+        background-color: red;
+    }
+    #nav{
+    display: inline-block;
+    width: 32%;
+    }   
+
+    #sect{
+    display: inline-block;
+    width: 64.5%;
+    }
+
+    #article{
+    display: inline-block;
+    width: 31.7%;
+    }}
+/*tablet*/
+@media screen and (min-width: 426px) and (max-width: 768px)
+{
+    code {
+        background-color: blue;
+    }
+    #nav{
+    display: inline-block;
+    width: 33%;
+    }   
+
+    #sect{
+    display: inline-block;
+    width: 64.7%;
+    }
+
+    #article{
+    display: inline-block;
+    width: 32.4%;
+    }
+}
+/*laptop*/
+@media screen and (min-width: 769px) and (max-width: 1024px)
+{
+    code {
+        background-color: #3db34a;
+    }
+    #nav{
+    display: inline-block;
+    width: 33.5%;
+    }   
+
+    #sect{
+    display: inline-block;
+    width: 64.5%;
+    }
+
+    #article{
+    display: inline-block;
+    width: 32.5%;
+    }
+}
+/*large laptop*/
+@media screen and (min-width: 1025px) and (max-width: 1440px)
+{
+    code {
+        background-color: orange;
+    }
+}
+
+
+

@@ -1,0 +1,318 @@
+body{
+background-image: url(../images/Stark.png);
+    background-position:center;
+    background-size:contain;
+    background-repeat:repeat-y;
+
+}
+
+.container{  
+    width: 320px;
+    height: 340vh; 
+}
+
+header{
+ display: grid;
+    grid-template-columns: 75px 1fr 75px;
+}
+ 
+#netflix_logo{
+    width: 72px;
+    height: 32px;
+    display: inline-grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.sign_up_btn{
+    width: 72px;
+    height: 25px;
+    display: inline-grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+button{
+    color: red;
+}
+
+.main_img{
+    width: 320px;
+    height: 200px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+section{
+    display: grid;
+    grid-template-rows: repeat(3,30px 340px 340px);
+    grid-template-columns: 1fr;
+}
+
+p{
+    color: white;
+    text-align: center;
+    width: 320px;
+    height: 30px;
+    font-size: 25px;
+    font-family: cursive;
+/*
+     background-color: #2D2D2D;
+    background-blend-mode:soft-light;
+*/
+}
+
+#series{
+    height: 340px;
+}
+.action{
+    display: block;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+#action_head{
+    display: inline-grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 0;
+    margin-top:10px;
+}
+#arrow{
+  display: block;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+}
+#blindspot{
+  display: block;
+    grid-row-start: 3;
+    grid-row-end: 4;  
+}
+
+#arrow, #blindspot, #breaking_bad, #stranger_things, #grimm, #teen_wolf{
+    width: 320px;
+    height: 340px;
+    position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: 
+    linear-gradient(black 0%, red 90%), 
+    linear-gradient(to right, black 20%, red 90%);
+    background-blend-mode: screen;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+    
+}
+.drama{
+    display: inline-block;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+#drama_head{
+    display: inline-block;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+#breaking_bad{
+  display: inline-block;
+    grid-row-start: 5;
+    grid-row-end: 6;  
+}
+
+#stranger_things{
+  display: inline-block;
+    grid-row-start: 6;
+    grid-row-end: 7;  
+}
+
+.fantasy{
+    display: block;
+    grid-row-start: 7;
+    grid-row-end: 10;
+}
+
+#fantasy_head{
+    display: inline-block;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    z-index: 1;
+    margin-top: 90px;
+    padding: 0;
+}
+
+#grimm{
+    display: inline-block;
+    grid-row-start: 8;
+    grid-row-end: 9;  
+}
+
+
+/*responsive*/
+/*small mobile*/
+
+@media screen  and (max-width: 320px)  {
+    
+    .container{
+    width: 310px;
+    height: 340vh;
+}
+    .main_img{
+    width: 310px;
+    height: 200px;
+}
+    #series{
+    height: 310px;
+}
+    #arrow, #blindspot, #breaking_bad, #stranger_things, #grimm, #teen_wolf{
+    width: 310px;
+    height: 340px;
+    position: relative;
+}
+    p{
+    width: 310px;
+    height: 30px;
+}
+    #drama_head{
+    display: inline-block;
+    margin-top: 0px;
+}
+    #fantasy_head{
+    display: inline-block;
+    margin-top: 10px;
+}
+    
+}
+
+/*medium mobile*/
+
+@media screen and (min-width: 321px) and (max-width: 375px)  {
+    
+    .container{
+    width: 360px;
+    height: 340vh;
+}
+    .main_img{
+    width: 360px;
+    height: 200px;
+}
+    #series{
+    height: 360px;
+}
+    #arrow, #blindspot, #breaking_bad, #stranger_things, #grimm, #teen_wolf{
+    width: 360px;
+    height: 340px;
+    position: relative;
+}
+    p{
+    width: 360px;
+    height: 30px;
+}
+    #drama_head{
+    display: inline-block;
+    margin-top: 80px;
+}
+    #fantasy_head{
+    display: inline-block;
+    margin-top: 150px;
+}
+    
+}
+/*large mobile*/
+
+@media screen and (min-width: 376px) and (max-width: 425px)  {
+    
+    .container{
+    width: 415px;
+    height: 370vh;
+}
+    .main_img{
+    width: 415px;
+    height: 200px;
+}
+    #series{
+    height: 415px;
+}
+    #arrow, #blindspot, #breaking_bad, #stranger_things, #grimm, #teen_wolf{
+    width: 415px;
+    height: 340px;
+    position: relative;
+}
+    p{
+    width: 415px;
+    height: 40px;
+}
+    #drama_head{
+    display: inline-block;
+    margin-top: 220px;
+}
+    #fantasy_head{
+    display: inline-block;
+    margin-top: 420px;
+}
+    .overlay{
+        width: 415px;
+        height: 415px;
+    }
+}
+
+/*large mobile*/
+
+@media screen and (min-width: 426px) and (max-width: 768px)  {
+    
+    .container{
+    width: 758px;
+    height: 500vh;
+}
+    .main_img{
+    width: 758px;
+    height: 200px;
+}
+    #series{
+    height: 758px;
+}
+    #arrow, #blindspot, #breaking_bad, #stranger_things, #grimm, #teen_wolf{
+    width: 758px;
+    height: 340px;
+    position: relative;
+}
+    p{
+    width: 758px;
+    height: 40px;
+}
+    #drama_head{
+    display: inline-block;
+    margin-top: 220px;
+}
+    #fantasy_head{
+    display: inline-block;
+    margin-top: 420px;
+}
+    .overlay{
+        width: 758px;
+        height: 415px;
+    }
+}
